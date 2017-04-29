@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/americanfootbalfield"
+    tools:context="com.wordpress.kadekadityablog.americanfootballscoreapps.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="8dp">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginRight="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team A"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:padding="8dp"
+                android:textColor="#80D8FF"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:padding="8dp"
+                android:id="@+id/team_a_score"
+                android:textColor="#80D8FF"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Touch down"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="touchDownA"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Field Goal"
+                    android:layout_marginRight="8dp"
+                    android:onClick="fieldGoalA"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Extra TD"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="extraTDA"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Extra FG"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:onClick="extraFGA"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:layout_marginLeft="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Team B"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:padding="8dp"
+                android:textColor="#A7FFEB"
+                android:textStyle="bold"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="0"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:padding="8dp"
+                android:id="@+id/team_b_score"
+                android:textColor="#A7FFEB"
+                android:textStyle="bold"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Touch down"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="touchDownB"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Field Goal"
+                    android:layout_marginRight="8dp"
+                    android:onClick="fieldGoalB"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Extra TD"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginLeft="8dp"
+                    android:onClick="extraTDB"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="80dp"
+                    android:text="Extra FG"
+                    android:layout_marginBottom="8dp"
+                    android:layout_marginRight="8dp"
+                    android:onClick="extraFGB"
+                    android:textColor="#FAFAFA"
+                    android:layout_weight="1"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reset"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="8dp"
+            android:onClick="reset"
+            android:textColor="#FAFAFA"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
